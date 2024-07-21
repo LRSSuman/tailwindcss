@@ -24,7 +24,7 @@ flexbox:
     flex-col
     flex-row
     justify-start/center/end/between
-    item-start/center/end/stretch/naseline
+    items-start/center/end/stretch/naseline
     flex-grow/flex-grow-0/flex-1
 
 grid:
