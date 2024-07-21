@@ -1,0 +1,33 @@
+installation:
+    CDN Link: 
+        <script src="https://cdn.tailwindcss.com"></script> (paste in head tag)
+    Using CLI:
+        yarn add -D tailwindcss
+        yarn tailwindcss init
+        1.set template path (content: ["./src/**/*.{html,js}"],)
+        2.paste directives in input.css
+            @tailwind base;
+            @tailwind components;
+            @tailwind utilities;
+        3.run the command: $ yarn tailwindcss -i ./src/input.css -o ./src/output.css --watch
+        4.<link href="./output.css" rel="stylesheet"> (paste in head tag)
+    PostCSS with vite:
+        by using postcss, we can use tailwindcss in build tools like webpack,vite,etc.
+        1.create vite project
+        2. $ yarn add -D tailwindcss postcss autoprefixer
+        3. $ yarn tailwindcss init -p
+        4. set path
+            content: [
+                "./index.html",
+                "./src/**/*.{js,ts,jsx,tsx}",
+            ],
+        5.paste directives in index.css
+            @tailwind base;
+            @tailwind components;
+            @tailwind utilities;
+        6. $ yarn dev
+
+        7.postcss - convert tailwind directives syntax to normal css in single file
+        8.autoprefixer - it sutomatically add vendor prefix
+
+

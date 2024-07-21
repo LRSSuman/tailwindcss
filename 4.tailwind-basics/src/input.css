@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* extract component */
+@layer components {
+    .click-btn {
+        @apply text-white bg-red-400 p-2 m-5 border-2 border-red-700 rounded-3xl hover:bg-white hover:text-black;
+    }
+}

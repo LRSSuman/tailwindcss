@@ -1,0 +1,33 @@
+directions:
+    top - t
+    bottom - b
+    right - r
+    left - l
+    horizontal - x
+    vertical - y
+    allside - 
+
+logiacal properties: (used for dir=rtl or ltr)
+    state - s
+    end - e
+
+breskpoints for responsive
+    sm - small device (640px)
+    md - medium device (768px)
+    lg - large device (1024px)
+    xl - extra large device (1280px)
+    2xl - extra extra large (1536px)
+    arbiraty - min-[100px] max-[100px]
+
+flexbox:
+    flex
+    flex-col
+    flex-row
+    justify-start/center/end/between
+    item-start/center/end/stretch/naseline
+    flex-grow/flex-grow-0/flex-1
+
+grid:
+    grid
+    grid-cols-1 to 12
+    gap-1
